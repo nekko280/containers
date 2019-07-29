@@ -1,0 +1,10 @@
+version: '3'
+services:
+  # front
+  front:
+    build: frontend-example001
+    container_name: frontend-example001
+    ports:
+      - 80:80
+    privileged: true
+    restart: always
